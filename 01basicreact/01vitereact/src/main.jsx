@@ -29,16 +29,20 @@ function MyApp(){
 //         click me to visit google
 //     </a>
 // );
-const ReactElement = React.createElement(
+const anotheruser = "chai aur react"
+const reactElement = React.createElement(
   'a',
   {
     href: 'https://google.com',
     target: '_blank'
   },
-  'click visit google'
+  'click visit google',
+  anotheruser
 );
 
-const container = document.getElementById('root');
-ReactDOM.createRoot(container).render(ReactElement); // ✅ this works if ReactDOM is globally defined
+ReactDOM.createRoot(document.getElementById('root')).render(
+  
+    reactElement
 
+);
 
